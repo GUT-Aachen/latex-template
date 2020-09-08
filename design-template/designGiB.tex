@@ -1,0 +1,83 @@
+%% Template created by Sven F. Biebricher
+%% This template is licensed under GNU GENERAL PUBLIC LICENSE 3.0
+
+\documentclass[	a4paper,  % paper size set to DIN A4
+								twoside,  % two side formatting
+								fontsize = 12,  % font size for \normalsize set to 12
+								parskip = half,  % paragraphs are separated by 0.5\baselineskip
+								BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
+								toc = listof,  % ddd List of figures and tables to table of contents
+								toc = bibliography,
+								numbers = noendperiod  % no dot at the end of chapter and section labels
+							]{scrbook}  % document class
+
+
+% ########################
+% Load necessary packages
+% ########################
+
+	\usepackage[headsepline,  % plotted line under each headline
+							plainheadsepline,  % plotted line over each headline even on plain pages (chapter beginning)
+							footsepline,  % plotted line over each footline
+							plainfootsepline  % plotted line over each footline even on plain pages
+						 ]{scrlayer-scrpage}  % package for manipulating headlines
+	
+	\usepackage[	inner = 2.5cm,
+								outer = 2cm,
+								top = 3.25cm,
+								bottom = 3cm
+						 ]{geometry}  % manipulate page margins
+						 
+	\usepackage{setspace}  % change linespacing
+						 
+	\usepackage[T1]{fontenc}  % changed font encoding to west-european letters
+	\usepackage{textalpha}  % use greek letters in text directly like α
+	\usepackage{lmodern}  % modification of fonts to make them 'clearer'
+	\usepackage{textcomp}  % eg. modified € und § symbols
+	\usepackage{csquotes}  % provides advanced facilities for inline and display quotations
+	
+	\usepackage{amsmath}  % highly improves math mode
+	
+	\usepackage{booktabs}  % beautify tables
+	\usepackage{longtable}
+	
+	\usepackage[hidelinks]{hyperref}  % hide links in pdf document
+	
+	\usepackage{graphicx}  % include graphics
+	
+	\usepackage[	bibstyle = authoryear,  % change style in toc to 'authoryear'
+								citestyle = authoryear-comp  % change citation style to 'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
+						 ]{biblatex}  % use biblatex for bibliography
+
+	\usepackage{acro}  % handly acronyms
+
+% ########################
+% Define page design
+% ########################
+	
+	% Define formatting of headlines
+	\setkomafont{chapter}{\Large\sffamily}
+	\setkomafont{section}{\large\sffamily}
+	\setkomafont{subsection}{\normalsize\sffamily}
+	\setkomafont{caption}{\footnotesize\sffamily}
+	\setkomafont{captionlabel}{\hspace{1cm}\bfseries\footnotesize\sffamily}
+	\setkomafont{pageheadfoot}{\footnotesize}
+	\setkomafont{pagefoot}{\usekomafont{pageheadfoot}}
+	\setkomafont{pagenumber}{\usekomafont{pageheadfoot}}
+	
+	% Define header
+	% without *: only on regular pages
+	% with *: also on plain pages (like chapter beginning)
+	\ihead*{\headmark}  % Inside show caption of chapter (left) / section (right)
+	\ohead*{\pagemark}  % Outside show page number
+	
+	% Define footer	
+	\ofoot*{\myFootText}  % Show authors name
+	
+	% Set line spacing to 1.15
+	\setstretch{1.15}
+	
+	% Disable single lines at the start of a paragraph (Schusterjungen)
+	\clubpenalty = 10000
+	% Disable single lines at the end of a paragraph (Hurenkinder)
+	\widowpenalty = 10000 \displaywidowpenalty = 10000
