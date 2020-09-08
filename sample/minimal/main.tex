@@ -1,13 +1,4 @@
-\input{../design-template/designGiB}  % import GiB design for dissertation
-
-% ########################
-% Load optional packages
-% ########################
-
-\usepackage[ngerman]{babel}  % set language to german
-\usepackage{ziffer}  % conversion of punctuation in maths mode (switches . and ,)
-\usepackage{lineno}  % create line numbering for review process
-\usepackage{blindtext}  % creates blindtexts
+\input{../../design-template/designGiB}  % import GiB design for dissertation
 
 % ########################
 % Define personal values
@@ -21,12 +12,7 @@
 \newcommand*{\mySecondReviewer}{Universitätsprofessor Raul Fuentes}
 \newcommand*{\myExamDate}{30.02.2021}
 \newcommand*{\myFootText}{Dissertation \myAuthor}
-\newcommand*{\myAcronymListCaption}{Abkürzungsverzeichnis}
-\newcommand*{\myBibCaption}{Literaturverzeichnis}
 
-\graphicspath{{figures/}}  % define graphics standard path
-
-\acsetup{list/name={\myAcronymListCaption}}  % set chapter title for list of acronyms
 \input{chapter/acronyms}  % import acronyms
 
 \addbibresource{bibliography.bib}  % add bibliography
@@ -38,10 +24,6 @@
 
 \begin{document}
 
-% Helpfull features for review process
-%\linenumbers  % add numbers to each line
-%\setstretch{2}  % set line spacing to factor 2
-
 \input{../design-template/titlepage_dissertation_de}  % include german titlepage
 
 \frontmatter  % start front matter section
@@ -51,17 +33,10 @@
 \listoffigures  % print table of figures
 \listoftables  % print table of tables
 \printacronyms  % print list of acronyms
-\input{chapter/symbols}  % include list of symbols
 
 \mainmatter  % start main matter (arabic page numbering)
 \input{content}  % YOUR research content
 
-\printbibliography[title={\myTOCCaption}]  % print bibliography
-
-\appendix  % begin appendix
-\clearpage
-
-\input{chapter/appendix}  % include appendix content
-
+\printbibliography  % print bibliography
 
 \end{document}
