@@ -50,12 +50,12 @@ This repository constits of a design template, titlepages (different per thesis 
 * `booktabs` adds and changes lines and spacing in tables and beautifies them
 * `graphicx` used to include graphics
 * `hyperref` modifies links and refs in generated pdf (in this case links are not shown)
-* `textalpha` makes it possible to use greek letters in the source code instead of using functions like $\alpha$
+* `textalpha` makes it possible to use greek letters in the source code instead of using functions like `$\alpha$`
 * `lineno` creates line numbering which is usefull for a review process
 
 
 ### Recommended packages for germans
-* `babel` sets the documents language. OptUion `[german]` for german.
+* `babel` sets the documents language. Option `[german]` for german.
 * `ziffer` activates the german punctation conversion: , is decimal separator; . is thousand separator (will be replaced by protected space)
 
 ---
