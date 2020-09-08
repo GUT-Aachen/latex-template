@@ -9,7 +9,7 @@ The template is based on the scrbook-class of the KOMA-Script (<https://komascri
 * headgins (chapter/section/subsection)
 * captions (tables and figures)
 
-![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)
+[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)
 ![License: GNU](https://img.shields.io/github/release-date/froido/gib-latex-template?style=flat-square)
 ![License: GNU](https://img.shields.io/github/v/release/froido/gib-latex-template?style=flat-square)
 [![MiKTeX](https://img.shields.io/static/v1?label=LaTeX&message=MiKTeX&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
@@ -87,7 +87,7 @@ Reach out to me at one of the following places!
 
 ## License
 
-![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
+[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
 ---
