@@ -1,4 +1,4 @@
-\input{../design-template/designGiB}  % import GiB design for dissertation
+\input{../../design-template/designGiB}  % import GiB design for dissertation
 
 % ########################
 % Load optional packages
@@ -27,6 +27,7 @@
 \graphicspath{{figures/}}  % define graphics standard path
 
 \acsetup{list/name={\myAcronymListCaption}}  % set chapter title for list of acronyms
+
 \input{chapter/acronyms}  % import acronyms
 
 \addbibresource{bibliography.bib}  % add bibliography
@@ -42,10 +43,10 @@
 %\linenumbers  % add numbers to each line
 %\setstretch{2}  % set line spacing to factor 2
 
-\input{../design-template/titlepage_dissertation_de}  % include german titlepage
-
 \frontmatter  % start front matter section
 \pagenumbering{Roman}  % set page numbering to Roman
+
+\input{../../design-template/titlepage_dissertation_de}  % include german titlepage
 
 \tableofcontents  % print table of contents
 \listoffigures  % print table of figures
@@ -56,7 +57,7 @@
 \mainmatter  % start main matter (arabic page numbering)
 \input{content}  % YOUR research content
 
-\printbibliography[title={\myTOCCaption}]  % print bibliography
+\printbibliography[title={\myBibCaption}]  % print bibliography
 
 \appendix  % begin appendix
 \clearpage
