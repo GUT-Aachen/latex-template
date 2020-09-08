@@ -1,4 +1,4 @@
-# GiB Thesis Template
+# GiB Thesis LaTeX Template
 LaTeX template for theses (i.e. dissertation) at the Chair of Geotechnical Engeneering at RWTH Aachen.
 The template is based on the scrbook-class of the KOMA-Script. Some design modifications are made to match the design demands of the chair:
 * fontsize
