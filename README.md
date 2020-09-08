@@ -10,8 +10,8 @@ The template is based on the scrbook-class of the KOMA-Script (<https://komascri
 * captions (tables and figures)
 
 [![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)
-![License: GNU](https://img.shields.io/github/release-date/froido/gib-latex-template?style=flat-square)
-![License: GNU](https://img.shields.io/github/v/release/froido/gib-latex-template?style=flat-square)
+[![License: GNU](https://img.shields.io/github/release-date/froido/gib-latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
+[![License: GNU](https://img.shields.io/github/v/release/froido/gib-latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
 [![MiKTeX](https://img.shields.io/static/v1?label=LaTeX&message=MiKTeX&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
 [![KOMA-Script](https://img.shields.io/static/v1?label=LaTeX&message=KOMA-Script&color=5269A9&style=flat-square&logo=latex)](https://komascript.de/)
 
