@@ -68,7 +68,7 @@
 	% Define header
 	% without *: only on regular pages
 	% with *: also on plain pages (like chapter beginning)
-	\ihead*[\headmark]{\headmark}  % Inside show caption of chapter (left) / section (right)
+	\ihead*[\leftmark]{\headmark}  % Inside show caption of chapter (left) / section (right); on plain pages allways chapter (leftmark)
 	\ohead*{\pagemark}  % Outside show page number
 	
 	% Define footer	
@@ -81,3 +81,5 @@
 	\clubpenalty = 10000
 	% Disable single lines at the end of a paragraph (Hurenkinder)
 	\widowpenalty = 10000 \displaywidowpenalty = 10000
+	
+	\acsetup{list/display=used}  % show only used acronyms in listing
