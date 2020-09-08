@@ -18,17 +18,22 @@ The template is based on the scrbook-class of the KOMA-Script. Some design modif
 ---
 
 ## Structure
-This repository constits of a design template, titlepages (different per thesis type) and a sample.
+This repository constits of a design template, titlepages (different per thesis type) and samples (minimal and full).
 
-├── design-template/  
+├── [design-template/](design-template)  
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── designGiB.tex `design template`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── titlepage_dissertation_de.tex `titlepage for dissertation in german`  
-├── sample/  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── chapter/ `folder containing the thesis content`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── figures/ `folder containing all figures`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.text `merges everything together, sets language, sets user variables`
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── titlepage_dissertation_de.tex `titlepage for dissertation in german`  
+└── samples/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [minimal/](samples/minimal) `folder containing a minimal sample`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.text `merges everything together, sets language, sets user variables`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [full/](samples/full) `folder containing a full sample (with german remarks)`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── chapter/ `folder containing the thesis content`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── figures/ `folder containing all figures`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.text `merges everything together, sets language, sets user variables`  
 
 ---
 
@@ -56,7 +61,7 @@ This repository constits of a design template, titlepages (different per thesis 
 
 ### Recommended packages for germans
 * `babel` sets the documents language. Option `[german]` for german.
-* `ziffer` activates the german punctation conversion: , is decimal separator; . is thousand separator (will be replaced by protected space)
+* `ziffer` activates the german punctation conversion: `,` is decimal separator; `.` is thousand separator (will be replaced by protected space)
 
 ---
 
