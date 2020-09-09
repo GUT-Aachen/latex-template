@@ -19,6 +19,9 @@ The template is based on the *scrbook-class* of the *KOMA-Script*. Some design m
 ---
 
 ## Requirements
+[![MiKTeX](https://img.shields.io/static/v1?label=MiKTeX&message=v20.7&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
+[![MiKTeX](https://img.shields.io/static/v1?label=MiKTeX&message=PdfLaTeX&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
+[![KOMA-Script](https://img.shields.io/static/v1?label=KOMA-Script&message=v3.31&color=5269A9&style=flat-square&logo=latex)](https://komascript.de/)  
 This template is coded to be compiled with *PdfLaTeX*. Other compilers like *XeLaTex* or *LuaLaTeX* can cause unpredictable errors. The continuous development of *KOMA-Script*, *MiKTeX* and other packages may lead to some commands being deprecated or to packages no longer being compatible with each other. The template was developed for the following packages and the announced specific version.
 
 * MiKTeX v20.7
@@ -77,13 +80,15 @@ This repository constits of a design template, title pages (different per thesis
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [minimal/](samples/minimal) `folder containing a minimal sample`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.text `merges everything together, sets language, sets user variables`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.tex `merges everything together, sets language, sets user variables`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.pdf `final document`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [full/](samples/full) `folder containing a full sample (with german remarks)`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── chapter/ `folder containing the thesis content`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── figures/ `folder containing all figures`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.text `merges everything together, sets language, sets user variables`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.text `merges everything together, sets language, sets user variables`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.pdf `final document`  
 
 ---
 
@@ -225,7 +230,7 @@ Reach out to me at one of the following places!
 
 ## License
 
-[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)
+[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)  
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
 ---
