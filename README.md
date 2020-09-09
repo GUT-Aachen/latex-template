@@ -1,6 +1,6 @@
 # GiB Thesis LaTeX Template
 >LaTeX template for theses (i. e. dissertation) at the Chair of Geotechnical Engeneering at RWTH Aachen.
-The template is based on the scrbook-class of the KOMA-Script. Some design modifications are made to match the design demands of the chair:
+The template is based on the *scrbook-class* of the *KOMA-Script*. Some design modifications are made to match the design demands of the chair:
 * fontsize
 * margins
 * linespacing
@@ -19,7 +19,7 @@ The template is based on the scrbook-class of the KOMA-Script. Some design modif
 ---
 
 ## Requirements
-This template is coded to be compiled with PdfLaTeX. Other compilers like XeLaTex or LuaLaTeX can cause unpredictable errors. The continuous development of KOMA-Script, MiKTeX and other packages may lead to some commands being deprecated or to packages no longer being compatible with each other. The template was developed for the following packages and the announced specific version.
+This template is coded to be compiled with *PdfLaTeX*. Other compilers like *XeLaTex* or *LuaLaTeX* can cause unpredictable errors. The continuous development of *KOMA-Script*, *MiKTeX* and other packages may lead to some commands being deprecated or to packages no longer being compatible with each other. The template was developed for the following packages and the announced specific version.
 
 * MiKTeX v20.7
 * KOMA-Script v3.31
