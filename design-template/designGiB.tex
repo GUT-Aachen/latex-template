@@ -36,8 +36,19 @@
 	\usepackage{textcomp}  % eg. modified € und § symbols
 	\usepackage{csquotes}  % provides advanced facilities for inline and display quotations
 	
-	\usepackage{amsmath}  % highly improves math mode
+	\usepackage{microtype}  % Better results in line breaks and overfull boxes 
+	%error
 	
+	\usepackage[labelsep=quad,  % Add a \quad after caption label
+							format=hang,  % Captionlabels with multiple lines are hanging
+							font={footnotesize, sf},  % changing font for caption label and 
+							%text
+							labelfont=bf  % changing font only for caption text
+						 ]{caption}  % additional options for captions and required for 
+						 %subcaption package
+	\usepackage{subcaption}  % includes subfigure environment
+	
+	\usepackage{amsmath}  % highly improves math mode
 	\usepackage{booktabs}  % beautify tables
 	\usepackage{longtable}
 	
@@ -59,8 +70,6 @@
 	\setkomafont{chapter}{\Large\sffamily}
 	\setkomafont{section}{\large\sffamily}
 	\setkomafont{subsection}{\normalsize\sffamily}
-	\setkomafont{caption}{\footnotesize\sffamily}
-	\setkomafont{captionlabel}{\hspace{1cm}\bfseries\footnotesize\sffamily}
 	\setkomafont{pageheadfoot}{\footnotesize}
 	\setkomafont{pagefoot}{\usekomafont{pageheadfoot}}
 	\setkomafont{pagenumber}{\usekomafont{pageheadfoot}}
