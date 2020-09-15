@@ -1,2 +1,22 @@
 
 *.log
+samples/minimal/main.acr
+samples/minimal/main.aux
+samples/minimal/main.bbl
+samples/minimal/main.bcf
+samples/minimal/main.blg
+samples/minimal/main.out
+samples/full/main.acr
+samples/full/main.aux
+samples/full/main.bbl
+samples/full/main.bcf
+samples/full/main.blg
+samples/full/main.lof
+samples/full/main.lot
+samples/full/main.out
+samples/full/main.run.xml
+samples/full/main.synctex.gz
+samples/full/main.toc
+samples/minimal/main.run.xml
+samples/minimal/main.toc
+samples/minimal/main.synctex.gz
