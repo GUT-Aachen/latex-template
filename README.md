@@ -112,6 +112,10 @@ This repository constits of a design template, title pages (different per thesis
 * `hyperref` modifies links and refs in generated pdf (in this case links are not shown)
 * `textalpha` makes it possible to use greek letters in the source code instead of using functions like `$\alpha$`
 * `lineno` creates line numbering which is usefull for a review process
+* `siunitx` helpfull to show value-unit-pairs in text
+* `todonotes` insert to–do items in your document
+* `pdfpages` include full pdf documents (not only single pages like includegraphics)
+* `tabularx` create tabulars with a fixed width (one flexible col)
 
 
 ### Recommended packages for germans
@@ -214,6 +218,29 @@ The easiest way to create a list of symbols is to create a table containing your
       $B$ & $[m]$ & Sample width\\
       ...
     \end{longtable}
+```
+
+### Use value-unit-pairs (siunitx)
+To create a value unit pair the opportunities of siunitx package should be used. 
+
+```tex
+\SI{35}{\kilo\newton\per\square\meter}  % single value
+\SIrange{1e-9}{10e-9}{\meter\per\second}  % range inlcuding value
+```
+
+
+### Captions for tables
+To create a caption above a table, respecting design margings `\captionabove` must be used instead of `\caption`.
+
+```tex
+\begin{table}
+  \captionabove{Your table caption}
+  \label{tbl:yourTableName}
+  \centering
+  \begin{tabular}{lrr} 
+    % content
+  \end{tabular}
+\end{table}
 ```
 
 ---
