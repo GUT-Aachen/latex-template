@@ -146,7 +146,11 @@ Different title pages are available (shall be) depending on the type of thesis. 
    \usepackage[ngerman]{babel}  % set language to german
    \usepackage{ziffer}  % conversion of punctuation in maths mode (switches . and ,)
    ```
-2. Change headings for list of acronyms and bibliography:
+2. Change language of `siunitx` package
+   ```tex
+   \sisetup{locale=DE}  % set language of siunitx package to german (change . to ,)
+   ```
+3. Change headings for list of acronyms and bibliography:
    - Setting user defined names
      ```tex
      \newcommand*{\myAcronymListCaption}{Abkürzungsverzeichnis}
