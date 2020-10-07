@@ -50,17 +50,25 @@
 	
 	\usepackage{amsmath}  % highly improves math mode
 	\usepackage{booktabs}  % beautify tables
-	\usepackage{longtable}
+	\usepackage{longtable}  % environment to create tables of a length of multiple pages
+	\usepackage{tabularx}  % create tabulars with a fixed width (one flexible col)
+	\usepackage{pdfpages}  % include multiple pages of pdf documents
+	
+	\usepackage{todonotes}  % creates to-do items and figures
 	
 	\usepackage[hidelinks]{hyperref}  % hide links in pdf document
 	
 	\usepackage{graphicx}  % include graphics
 	
-	\usepackage[	bibstyle = authoryear,  % change style in toc to 'authoryear'
-								citestyle = authoryear-comp  % change citation style to 'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
+	\usepackage[bibstyle = authoryear,  % change style in toc to 'authoryear'
+							citestyle = authoryear-comp  % change citation style to 'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
 						 ]{biblatex}  % use biblatex for bibliography
 
 	\usepackage{acro}  % handly acronyms
+
+	\usepackage[range-units=single  % on default show only a single unit when using /SIrange{}
+						 ]{siunitx}  % helpfull to show value-unit-pairs in text
+
 
 % ########################
 % Define page design
@@ -93,3 +101,6 @@
 	\widowpenalty = 10000 \displaywidowpenalty = 10000
 	
 	\acsetup{list/display=used}  % show only used acronyms in listing
+	
+	\setkeys{Gin}{width=0.9\linewidth}  % set default width for all included figures
+	\setkeys{Gin}{keepaspectratio=true}  % allways keep aspact ratio of figures

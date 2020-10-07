@@ -5,9 +5,9 @@
 	\blindtext
 	
 	
-	\begin{figure}
+	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\linewidth]{20191112_111105.jpg}  % picked from the defined standard folder 'figures/'
+		\includegraphics{20191112_111105.jpg}  % picked from the defined standard folder 'figures/'
 		\caption{Nievelsteiner Steinbruch}
 		\label{fig:20191112111105}
 	\end{figure}
@@ -42,7 +42,7 @@
 	\end{equation}
 	
 	\begin{table}
-		\caption{Einkommen abhängig vom Studium}
+		\captionabove{Versuchsplanung Übersicht}
 		\label{tbl:testtest}
 		\centering
 		\begin{tabular}{lrr} 
@@ -59,5 +59,7 @@
 
 \subsection{Unterunterkapitel 1}
 	Hier werden nun ein paar Zitationen vorgestellt. Es gibt solche im Text von \textcite{alam_effects_2014} und jene die am Ende eines Abschnitts stehen. \parencites{bailey_technology_2018}{alam_effects_2014}{dassault_systemes_abaqus_2017}{dassault_systemes_abaqus_2019}
+	
+	Außerdem können wir durch das Paket \emph{siunitx} sehr einfach Zahlen mit Einheiten, bspw.	\SI{35}{\kilo\newton\per\square\meter} oder eine Bandbreite \SIrange{1e-9}{10e-9}{\meter\per\second}.\footnote{Stand 07.10.2020 gibt es einen Bug im \emph{siunitx} Paket, welches ein Problem bei der Übersetzung ins deutsche hat. Aus diesem Grund wird bei der Angabe einer Bandbreite \emph{to} anstatt \emph{bis} angezeigt.} angegeben. Hierbei wird immer ein geschütztes Leerzeichen zwischen die Zahl und die Einheit gesetzt.
 	
 	\blindtext \parencite{alireza_hassanzadegan_thermomechanical_2012}
