@@ -108,14 +108,15 @@ This repository constits of a design template, title pages (different per thesis
 
 ### Recommended packages
 * `booktabs` adds and changes lines and spacing in tables and beautifies them
+* `enumitem` modifies and extends enumerate and itemize environment
 * `graphicx` used to include graphics
 * `hyperref` modifies links and refs in generated pdf (in this case links are not shown)
-* `textalpha` makes it possible to use greek letters in the source code instead of using functions like `$\alpha$`
 * `lineno` creates line numbering which is usefull for a review process
-* `siunitx` helpfull to show value-unit-pairs in text
-* `todonotes` insert to–do items in your document
 * `pdfpages` include full pdf documents (not only single pages like includegraphics)
+* `siunitx` helpfull to show value-unit-pairs in text
 * `tabularx` create tabulars with a fixed width (one flexible col)
+* `textalpha` makes it possible to use greek letters in the source code instead of using functions like `$\alpha$`
+* `todonotes` insert to–do items in your document
 
 
 ### Recommended packages for germans
