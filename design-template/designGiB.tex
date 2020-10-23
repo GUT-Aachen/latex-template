@@ -68,7 +68,8 @@
 
 	\usepackage[range-units=single  % on default show only a single unit when using /SIrange{}
 						 ]{siunitx}  % helpfull to show value-unit-pairs in text
-
+						 
+	\usepackage{enumitem}  % improves enumerate and itemize environment
 
 % ########################
 % Define page design
@@ -95,12 +96,16 @@
 	% Set line spacing to 1.15
 	\setstretch{1.15}
 	
-	% Disable single lines at the start of a paragraph (Schusterjungen)
+	% Disable single lines at the start of a paragraph (orphans)
 	\clubpenalty = 10000
-	% Disable single lines at the end of a paragraph (Hurenkinder)
+	% Disable single lines at the end of a paragraph (widows)
 	\widowpenalty = 10000 \displaywidowpenalty = 10000
 	
 	\acsetup{list/display=used}  % show only used acronyms in listing
 	
-	\setkeys{Gin}{width=0.9\linewidth}  % set default width for all included figures
+	% Defaults for figure environments
 	\setkeys{Gin}{keepaspectratio=true}  % allways keep aspact ratio of figures
+	
+	% Define enumerate end itemize environment defaults
+	\setlist{itemsep=0.3ex,topsep=0.3ex, parsep=0pt}  % set margin of enumerate and itemize environment
+	\setlist[itemize]{label=--}  % set itemize label to dash
