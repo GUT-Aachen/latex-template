@@ -6,16 +6,19 @@
 								fontsize = 12,  % font size for \normalsize set to 12
 								parskip = half,  % paragraphs are separated by 0.5\baselineskip
 								BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
-								toc = listof,  % ddd List of figures and tables to table of contents
+								toc = listof,  % List of figures and tables to table of contents
 								toc = bibliography,
-								numbers = noendperiod  % no dot at the end of chapter and section labels
+								numbers = noendperiod,  % no dot at the end of chapter and section labels
+								ngerman  % set language to new german (will be send to all language dependend packages like babel)
 							]{scrbook}  % document class
 
 
 % ########################
 % Load necessary packages
 % ########################
-
+	
+	\usepackage{babel}  % set language via option in document class
+	
 	\usepackage[headsepline,  % plotted line under each headline
 							plainheadsepline,  % plotted line over each headline even on plain pages (chapter beginning)
 							footsepline,  % plotted line over each footline
@@ -82,6 +85,7 @@
 	\setkomafont{pageheadfoot}{\footnotesize}
 	\setkomafont{pagefoot}{\usekomafont{pageheadfoot}}
 	\setkomafont{pagenumber}{\usekomafont{pageheadfoot}}
+	\addtokomafont{disposition}{\rmfamily}
 	
 	% Define header
 	\clearpairofpagestyles  % clear existing header and footer
