@@ -108,9 +108,17 @@
 	
 	\acsetup{list/display=used}  % show only used acronyms in listing
 	
-	% Defaults for figure environments
+% Defaults for figure environments
 	\setkeys{Gin}{keepaspectratio=true}  % allways keep aspact ratio of figures
 	
-	% Define enumerate end itemize environment defaults
+% Define enumerate end itemize environment defaults
 	\setlist{nosep, itemsep=0.3ex}  % set margin of enumerate and itemize environment
 	\setlist[itemize]{label=--}  % set itemize label to dash
+	
+	
+% ########################
+% Table adjustments
+% ########################
+	\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}} % linksbündig mit Breitenangabe
+	\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}} % rechtsbündig mit Breitenangabe
+	\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}  % zentriert mit Breitenangabe
