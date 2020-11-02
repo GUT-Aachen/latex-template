@@ -4,29 +4,15 @@
 % Load optional packages
 % ########################
 \usepackage{ziffer}  % conversion of punctuation in maths mode (switches . and ,)
-\sisetup{locale=DE}  % set language of siunitx package to german (change . to ,)
 \usepackage{lineno}  % create line numbering for review process
 \usepackage{blindtext}  % creates blindtexts
 
 % ########################
-% Define personal values
-% like title and author
+% Personalizations
 % ########################
-
-\newcommand*{\myTitle}{Mein extravaganter Dissertationstitel}
-\newcommand*{\mySubtitle}{Weitere Erklärungen zum Titel}
-\newcommand*{\myAuthor}{Jane Doe}
-\newcommand*{\myFirstReviewer}{Universitätsprofessor Dr.-Ing. Martin Ziegler}
-\newcommand*{\mySecondReviewer}{Universitätsprofessor Raul Fuentes}
-\newcommand*{\myExamDate}{30.02.2021}
-\newcommand*{\myFootText}{Dissertation \myAuthor}
-\newcommand*{\myAcronymListCaption}{Abkürzungsverzeichnis}
-\newcommand*{\myBibCaption}{Literaturverzeichnis}
-
+% Personalizations of the titlepages like title name or name of the reviewer have to be made in an configurationfile calles user_config.tex stored in the main folder.
 
 \graphicspath{{figures/}}  % define graphics standard path
-
-\acsetup{list/name={\myAcronymListCaption}}  % set chapter title for list of acronyms
 
 \input{chapter/acronyms}  % import acronyms
 
@@ -46,7 +32,7 @@
 \frontmatter  % start front matter section
 \pagenumbering{Roman}  % set page numbering to Roman
 
-\input{../../design-template/titlepage_dissertation_de}  % include german titlepage
+\input{../../design-template/\myTitlepage}  % include correct title page
 
 \tableofcontents  % print table of contents
 \listoffigures  % print table of figures

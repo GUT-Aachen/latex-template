@@ -1,8 +1,8 @@
 %% Template created by Sven F. Biebricher
 %% This template is licensed under GNU GENERAL PUBLIC LICENSE 3.0
 
-\documentclass[	a4paper,  % paper size set to DIN A4
-								twoside,  % two side formatting
+\documentclass[	paper=a4,  % paper size set to DIN A4
+								twoside = true,  % two side formatting
 								fontsize = 12,  % font size for \normalsize set to 12
 								parskip = half,  % paragraphs are separated by 0.5\baselineskip
 								BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
@@ -17,8 +17,8 @@
 % Load necessary packages
 % ########################
 	
-	\usepackage{babel}  % set language via option in document class
-	
+	\RequirePackage{babel}[2020/10/27]  % set language via option in document class
+
 	\usepackage[headsepline,  % plotted line under each headline
 							plainheadsepline,  % plotted line over each headline even on plain pages (chapter beginning)
 							footsepline,  % plotted line over each footline
@@ -38,6 +38,8 @@
 	\usepackage{lmodern}  % modification of fonts to make them 'clearer'
 	\usepackage{textcomp}  % eg. modified € und § symbols
 	\usepackage{csquotes}  % provides advanced facilities for inline and display quotations
+	
+	\usepackage{xcolor}  % makes latex more colorful
 	
 	\usepackage{microtype}  % Better results in line breaks and overfull boxes 
 	%error
@@ -108,17 +110,121 @@
 	
 	\acsetup{list/display=used}  % show only used acronyms in listing
 	
-% Defaults for figure environments
-	\setkeys{Gin}{keepaspectratio=true}  % allways keep aspact ratio of figures
-	
-% Define enumerate end itemize environment defaults
-	\setlist{nosep, itemsep=0.3ex}  % set margin of enumerate and itemize environment
-	\setlist[itemize]{label=--}  % set itemize label to dash
-	
+	% Defaults for figure environments
+		\setkeys{Gin}{keepaspectratio=true}  % allways keep aspact ratio of figures
+		
+	% Define enumerate end itemize environment defaults
+		\setlist{nosep, itemsep=0.3ex}  % set margin of enumerate and itemize environment
+		\setlist[itemize]{label=--}  % set itemize label to dash
+
+
+% ########################	
+% Define predefined colors
+% ########################	
+	\definecolor{grey}{rgb}{0.8,0.8,0.8}  % Define RWTH grey for title pages
+
 	
 % ########################
-% Table adjustments
+% Table enhancements
 % ########################
-	\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}} % linksbündig mit Breitenangabe
-	\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}} % rechtsbündig mit Breitenangabe
-	\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}  % zentriert mit Breitenangabe
+
+	% Adding new columntypes with option of width specification and vertical centering
+	% Example: \begin{tabular}{L{4.0cm}C{3cm}}
+	\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}} % flush left with  width specification
+	\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}} % flush right with  width specification
+	\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}  % centered with  width specification
+
+
+% ########################
+% Set caption names
+% ########################
+	% Set names for bibliography and acronym list (german and english)
+	\iflanguage{ngerman}{
+		\def\myBibCaption{Literaturverzeichnis}
+		\def\myAcronymListCaption{Abkürzungsverzeichnis}
+	}{
+		\def\myBibCaption{Reference List}
+		\def\myAcronymListCaption{Acronym List}
+	}
+	
+	% set chapter title for list of acronyms
+	\acsetup{list/name={\myAcronymListCaption}}  
+
+
+% ################################################
+% User configuration
+% ################################################
+	% Include users configuration file if it exists
+	\InputIfFileExists{user_config.tex}{}{
+		% If user_config.tex file not found the following defaults are set to prevent crashes
+		\def\myAuthor{Your Name}
+		\def\myFirstReviewer{First Reviewer}
+		\def\mySecondReviewer{Second Reviewer}
+		\def\myExamDate{30.02.2021}
+		\def\myThesisType{DISS} % BA, MA or DISS
+		
+		\def\myTitle{Dissertation Title}
+		\def\mySubtitle{Subtitle for Dissertation}
+		
+		\def\myTitleDe{Deutscher Titel der Arbeit}
+		\def\myTitleEn{English Thesis Title}
+		
+		\def\mySupervisor{Supervisors Name}
+		\def\myExamLocation{Location}
+	}
+	
+	% Create variable german study programm name in \myStudyProgramNameDe depending on thesis type (BA/MA)
+	\def\myStudyProgramNameDe{
+		\ifthenelse{\equal{\myThesisType}{MA}}{Masterarbeit}{%
+			\ifthenelse{\equal{\myThesisType}{BA}}{Bachelorarbeit}{%
+			}
+		}
+	}
+	
+	% Create variable english study programm name (\myStudyProgramNameDe) depending on thesis type (BA/MA)
+	\def\myStudyProgramNameEn{
+		\ifthenelse{\equal{\myThesisType}{MA}}{Master Thesis}{%
+			\ifthenelse{\equal{\myThesisType}{BA}}{Bachelor Thesis}{%
+			}
+		}	
+	}
+	
+	% Set study programm name (\myStudyProgramName) depending on language and thesis type
+	\iflanguage{ngerman}{
+		\def\myStudyProgramName{\myStudyProgramNameDe}
+	}{
+		\def\myStudyProgramName{\myStudyProgramNameEn}
+	}
+	
+	% Set footer depending on thesis type
+	\def\myFootText{\ifthenelse{\equal{\myThesisType}{DISS}}{Dissertation }{%
+			\ifthenelse{\equal{\myThesisType}{MA}}{\myStudyProgramName}{%
+				\ifthenelse{\equal{\myThesisType}{BA}}{\myStudyProgramName}{%
+				}%
+			}%
+		}\myAuthor}
+	
+	% Set file names of available title pages
+	\def\myTitlepageDissertation{titlepage_dissertation_de}
+	\def\myTitlepageBaMaThesis{titlepage_bachelor_master}
+	
+	% Select title page depending on thesis/dissertation type
+	\ifthenelse{
+		\equal{\myThesisType}{DISS}
+	}{
+		\def\myTitlepage{\myTitlepageDissertation}
+	}{
+		\ifthenelse{
+			\equal{\myThesisType}{MA}
+		}{
+			\def\myTitlepage{\myTitlepageBaMaThesis}
+		}{
+			\ifthenelse{
+				\equal{\myThesisType}{BA}
+			}{
+				\def\myTitlepage{\myTitlepageBaMaThesis}
+			}{
+				\def\myTitlepage{}
+			}
+		}
+	}
