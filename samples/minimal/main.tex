@@ -1,31 +1,18 @@
 \input{../../design-template/designGiB}  % import GiB design for dissertation
 
-% ########################
-% Define personal values
-% like title and author
-% ########################
-
-\newcommand*{\myTitle}{My extravagant dissertation title}
-\newcommand*{\mySubtitle}{Further explanations to the title}
-\newcommand*{\myAuthor}{Jane Doe}
-\newcommand*{\myFirstReviewer}{Professor Dr.-Ing. Martin Ziegler}
-\newcommand*{\mySecondReviewer}{Professor Raul Fuentes}
-\newcommand*{\myExamDate}{30.02.2021}
-\newcommand*{\myFootText}{Dissertation \myAuthor}
-
 \addbibresource{bibliography.bib}  % add bibliography
 
 % ########################
 % Beginning of the 
 % main document
 % ########################
-
 \begin{document}
 
 \frontmatter  % start front matter section
 \pagenumbering{Roman}  % set page numbering to Roman
 
-\input{../../design-template/titlepage_dissertation_de}  % include german titlepage
+
+\input{../../design-template/\myTitlepage}  % include german titlepage
 
 \tableofcontents  % print table of contents
 
