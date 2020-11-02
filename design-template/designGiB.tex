@@ -9,7 +9,7 @@
 								toc = listof,  % List of figures and tables to table of contents
 								toc = bibliography,
 								numbers = noendperiod,  % no dot at the end of chapter and section labels
-								ngerman  % set language to new german (will be send to all language dependend packages like babel)
+								english  % set language to new german (will be send to all language dependend packages like babel)
 							]{scrbook}  % document class
 
 
@@ -50,7 +50,7 @@
 							%text
 							labelfont=bf  % changing font only for caption text
 						 ]{caption}  % additional options for captions and required for 
-						 %subcaption package
+
 	\usepackage{subcaption}  % includes subfigure environment
 	
 	\usepackage{amsmath}  % highly improves math mode
@@ -65,17 +65,20 @@
 	\usepackage[hidelinks]{hyperref}  % hide links in pdf document
 	
 	\usepackage{graphicx}  % include graphics
-	
-	\usepackage[bibstyle = authoryear,  % change style in toc to 'authoryear'
-							citestyle = authoryear-comp  % change citation style to 'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
-						 ]{biblatex}  % use biblatex for bibliography
+						 
+	\usepackage[style = rwth-gib,  % change style in toc to 'authoryear';change citation style to 	'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
+							maxbibnames = 99, % arbitrary high value to ensure that all authors are listet in the bibliography
+							maxcitenames = 2, % truncate nameslist for citations
+							giveninits = true % abbrevation for first name
+							]{biblatex}  % use biblatex for bibliography
 
-	\usepackage{acro}  % handly acronyms
+	\usepackage{acro}  % handle acronyms
 
 	\usepackage[range-units=single  % on default show only a single unit when using /SIrange{}
 						 ]{siunitx}  % helpfull to show value-unit-pairs in text
 						 
 	\usepackage{enumitem}  % improves enumerate and itemize environment
+
 
 % ########################
 % Define page design
