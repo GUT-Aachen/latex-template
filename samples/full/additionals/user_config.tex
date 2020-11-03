@@ -1,0 +1,46 @@
+% ################################################################################################
+% This file is used to personalize the title page. The variable \myThesisType defines the type of work: Bachelor thesis (BA), Master thesis (MA), Dissertation (DISS). Then the variables required for the respective title page, such as the title of the thesis or the reviewer, are set. This information is different for DISS and BA/MA.
+% If BA/MA is specified, the title page is automatically adapted to the corresponding thesis.
+%
+% Other settings can also be made such as adding the bibliography or loading additional packages to make the main.tex file more lightweight.
+% ################################################################################################
+
+	% Set up document type
+	\def\myThesisType{MA}  % define type of thesis BA, MA or DISS
+	
+	% ################################################
+	% Definitions type independent
+	% ################################################		
+		\def\myAuthor{Jane Doe}  % authors name
+		\def\myFirstReviewer{Universitätsprofessor Dr. Raul Fuentes}  % name of first reviewer
+		\def\mySecondReviewer{Akad. Dir. Dipl.-Ing. Martin Feinendegen}  % name of second reviewer
+		\def\myExamDate{30.02.2021}  % examination date
+	
+	% ################################################
+	% Definitions for dissertation
+	% ################################################
+	%	\def\myTitle{Mein extravaganter Dissertationstitel}  % title of the dissertation
+	%	\def\mySubtitle{Weitere Erklärungen zum Titel}  % title of dissertation
+	
+	% ################################################
+	% Definitions for bachelor/master thesis
+	% ################################################
+		\def\myTitleDe{Mein extravaganter Titel}  % german thesis title
+		\def\myTitleEn{My extravagant title}  % english thesis title
+		\def\mySupervisor{Vorname Nachname, M.Sc.}  % name of supervisor
+		\def\myExamLocation{Aachen}  % eximination location
+
+
+% ########################
+% Load optional packages
+% ########################
+\usepackage{ziffer}  % conversion of punctuation in maths mode (switches . and ,)
+\usepackage{lineno}  % create line numbering for review process
+\usepackage{blindtext}  % creates blindtexts
+
+% ########################
+% Additional user settings
+% ########################
+\graphicspath{{figures/}}  % define graphics standard path
+\input{additionals/acronyms}  % import acronyms
+\addbibresource{additionals/bibliography.bib}  % add bibliography
