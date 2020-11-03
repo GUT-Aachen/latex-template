@@ -1,58 +1,34 @@
 \input{../../design-template/designGiB}  % import GiB design for dissertation
 
-% ########################
-% Load optional packages
-% ########################
-\usepackage{ziffer}  % conversion of punctuation in maths mode (switches . and ,)
-\usepackage{lineno}  % create line numbering for review process
-\usepackage{blindtext}  % creates blindtexts
-
-% ########################
-% Personalizations
-% ########################
-% Personalizations of the titlepages like title name or name of the reviewer have to be made in an configurationfile calles user_config.tex stored in the main folder.
-
-\graphicspath{{figures/}}  % define graphics standard path
-
-\input{chapter/acronyms}  % import acronyms
-
-\addbibresource{bibliography.bib}  % add bibliography
-
-%\DefineBibliographyStrings{english}{%
-%	references = {Works Cited},
-%}
-
-% ########################
-% Beginning of the 
-% main document
-% ########################
+% ###################################################################################
+% A 'user_config.tex' file has to be created in the subfolder 'additionals'
+% All document type dependent (BA, MA, DISS) settings take place in this file, i.e. setting title, reviewer name or type of document. Additionally loaded packages or other user-dependent settings like adding a bibliography can also be defined there. 
+% ###################################################################################
 
 \begin{document}
 
-% Helpfull features for review process
-%\linenumbers  % add numbers to each line
-%\setstretch{2}  % set line spacing to factor 2
-
-\frontmatter  % start front matter section
-\pagenumbering{Roman}  % set page numbering to Roman
-
-\input{../../design-template/\myTitlepage}  % include correct title page
-
-\tableofcontents  % print table of contents
-\listoffigures  % print table of figures
-\listoftables  % print table of tables
-\printacronyms  % print list of acronyms
-\input{chapter/symbols}  % include list of symbols
-
-\mainmatter  % start main matter (arabic page numbering)
-\input{content}  % YOUR research content
-
-\printbibliography[title={\myBibCaption}]  % print bibliography
-
-\appendix  % begin appendix
-\clearpage
-
-\input{chapter/appendix}  % include appendix content
-
+	% Helpfull features for review process
+	%\linenumbers  % add numbers to each line
+	%\setstretch{2}  % set line spacing to factor 2
+	
+	\frontmatter  % start front matter section
+		\pagenumbering{Roman}  % set page numbering to Roman
+		
+		\input{../../design-template/\myTitlepage}  % include correct title page
+		
+		\tableofcontents  % print table of contents
+		\listoffigures  % print table of figures
+		\listoftables  % print table of tables
+		\printacronyms  % print list of acronyms
+		\input{chapter/symbols}  % include list of symbols
+	
+	
+	\mainmatter  % start main matter (arabic page numbering)
+		\input{chapter/_content}  % YOUR research content
+		\printbibliography[title={\myBibCaption}]  % print bibliography
+	
+	
+	\appendix  % begin appendix
+		\input{chapter/appendix}  % include appendix content
 
 \end{document}
