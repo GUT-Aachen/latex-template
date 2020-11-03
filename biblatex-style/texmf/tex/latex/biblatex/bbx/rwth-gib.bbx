@@ -1,0 +1,24 @@
+% Create a new bibliography style
+% Style template: authoryear
+
+\ProvidesFile{rwth-gib.bbx}
+\RequireBibliographyStyle{authoryear}
+
+% #####################################
+% Adjustments
+% #####################################
+
+% Name format: Surname, N.
+\DeclareNameAlias{sortname}{family-given}
+
+% Collon after author listing
+\renewcommand*{\labelnamepunct}{\addcolon\addspace}
+
+% Comma as separator between the listings
+\renewcommand*{\newunitpunct}{\addcomma\addspace}
+
+% Suppress that the titel is set in quotation marks
+\DeclareFieldFormat*{citetitle}{#1\midsentence}
+\DeclareFieldFormat*{title}{#1\midsentence}
+
+\endinput
