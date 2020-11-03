@@ -110,14 +110,14 @@ This repository consists of a design template, title pages (different per docume
 
 ├── [design-template/](design-template)  
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── designGiB.tex `design template`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── titlepage_dissertation_de.tex `title page for dissertation in german`
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── titlepage_bachelor_master.tex `title page for master/bachelor thesis language independend`
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── titlepage_dissertation_de.tex `title page for dissertation in german` 
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── titlepage_bachelor_master.tex `title page for master/bachelor thesis language independend` 
 ├── [biblatex-style/](biblatex-style)  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [texmf/tex/latex/biblatex/](biblatex-style/texmf/tex/latex/biblatex)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [bbx/](biblatex-style/texmf/tex/latex/biblatex/bbx) `folder containing bibliography style`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.bbx `biblatex bibliography style`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [cbx/](biblatex-style/texmf/tex/latex/biblatex/cbx) `folder containing citation style`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.cbx `biblatex bibliography style`    
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [texmf/tex/latex/biblatex/](biblatex-style/texmf/tex/latex/biblatex) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [bbx/](biblatex-style/texmf/tex/latex/biblatex/bbx) `folder containing bibliography style` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.bbx `biblatex bibliography style` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [cbx/](biblatex-style/texmf/tex/latex/biblatex/cbx) `folder containing citation style` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.cbx `biblatex bibliography style` 
 └── samples/  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [minimal/](samples/minimal) `folder containing a minimal sample`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
