@@ -110,22 +110,22 @@ This repository consists of a design template, title pages (different per docume
 
 ├── [design-template/](design-template)  
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── designGiB.tex `design template`  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── titlepage_dissertation_de.tex `title page for dissertation in german` 
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── titlepage_bachelor_master.tex `title page for master/bachelor thesis language independend` 
-├── [biblatex-style/](biblatex-style)  
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [texmf/tex/latex/biblatex/](biblatex-style/texmf/tex/latex/biblatex) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [bbx/](biblatex-style/texmf/tex/latex/biblatex/bbx) `folder containing bibliography style` 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.bbx `biblatex bibliography style` 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [cbx/](biblatex-style/texmf/tex/latex/biblatex/cbx) `folder containing citation style` 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.cbx `biblatex bibliography style` 
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── titlepage_dissertation_de.tex `title page for dissertation in german`  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── titlepage_bachelor_master.tex `title page for master/bachelor thesis language independend`  
+├── [biblatex-style/](biblatex-style)   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [texmf/tex/latex/biblatex/](biblatex-style/texmf/tex/latex/biblatex)   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [bbx/](biblatex-style/texmf/tex/latex/biblatex/bbx)   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.bbx `biblatex bibliography style`  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [cbx/](biblatex-style/texmf/tex/latex/biblatex/cbx)   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── rwth-gib.cbx `biblatex bibliography style`  
 └── samples/  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [minimal/](samples/minimal) `folder containing a minimal sample`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── bibliography.bib `contains the bibliography`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── content.tex `this file contains all content`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.tex `merges everything together, sets language, sets user variables`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── main.pdf `final document`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [full/](samples/full) `folder containing a full sample (with german remarks)`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── additionals/ `folder containing additional content like user_config.tex, bibliography and acronyms.`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [full/](samples/full) `folder containing a full sample (with german remarks)`   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── additionals/ `folder containing additional content like user_config.tex, bibliography and acronyms.`   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── chapter/ `folder containing the thesis content`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── figures/ `folder containing all figures`      
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main.text `merges everything together, sets language, sets user variables`  
@@ -237,6 +237,15 @@ Additional for bachelor/master thesis:
      ```tex
      \printbibliography[title={\myBibCaption}]
      ```
+
+### Error(s) while compiling
+If you are running into errors while compiling your latex document, these hints might help you to solve your problem:
+1. Update your miktex installation to prevent errors due to oudated packages.
+2. Check if compiler is set to *PdfLaTeX* and _not_ *XeLaTex* or *LuaLaTeX*.
+3. Check if bibliography interpreter is set to *biber* (biblatex) but not to *bibtex*
+4. Take a deeper look into the log files and try to solve it on your own.
+5. Running on Linux? Inlcude `inputenc` package and set option to *utf8*.
+
 
 ### Document segmantation
 1. Use `\frontmatter` at the beginning and set the page numbering to *Roman*. The front matter includes all lists of something, e. g. figures, table of contents and titlepage.
