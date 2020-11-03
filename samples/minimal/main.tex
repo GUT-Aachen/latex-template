@@ -3,22 +3,21 @@
 \addbibresource{bibliography.bib}  % add bibliography
 
 % ########################
-% Beginning of the 
-% main document
+% Beginning main document
 % ########################
 \begin{document}
 
-\frontmatter  % start front matter section
-\pagenumbering{Roman}  % set page numbering to Roman
-
-
-\input{../../design-template/\myTitlepage}  % include german titlepage
-
-\tableofcontents  % print table of contents
-
-\mainmatter  % start main matter (arabic page numbering)
-\input{content}  % YOUR research content
-
-\printbibliography  % print bibliography
+	\frontmatter  % start front matter section
+		\pagenumbering{Roman}  % set page numbering to Roman
+		
+		\input{../../design-template/\myTitlepage}  % include german titlepage
+		
+		\tableofcontents  % print table of contents
+	
+	
+	\mainmatter  % start main matter (arabic page numbering)
+		\input{content}  % YOUR research content
+		
+		\printbibliography  % print bibliography
 
 \end{document}
