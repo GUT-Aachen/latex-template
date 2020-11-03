@@ -155,10 +155,10 @@
 
 
 % ################################################
-% User configuration
+% Document type-dependent configurations
 % ################################################
 	% Include users configuration file if it exists
-	\InputIfFileExists{user_config.tex}{}{
+	\InputIfFileExists{additionals/user_config.tex}{}{
 		% If user_config.tex file not found the following defaults are set to prevent crashes
 		\def\myAuthor{Your Name}
 		\def\myFirstReviewer{First Reviewer}
