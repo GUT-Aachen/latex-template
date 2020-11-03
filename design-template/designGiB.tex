@@ -9,7 +9,7 @@
 								toc = listof,  % List of figures and tables to table of contents
 								toc = bibliography,
 								numbers = noendperiod,  % no dot at the end of chapter and section labels
-								english  % set language to new german (will be send to all language dependend packages like babel)
+								ngerman  % set language to new german (will be send to all language dependend packages like babel)
 							]{scrbook}  % document class
 
 
@@ -49,7 +49,7 @@
 							font={footnotesize, sf},  % changing font for caption label and 
 							%text
 							labelfont=bf  % changing font only for caption text
-						 ]{caption}  % additional options for captions and required for 
+						 ]{caption}  % additional options for captions and required for subcaption package
 
 	\usepackage{subcaption}  % includes subfigure environment
 	
@@ -153,6 +153,11 @@
 	% set chapter title for list of acronyms
 	\acsetup{list/name={\myAcronymListCaption}}  
 
+% ################################################
+% Language setup for siunitx
+% ################################################
+\addto\extrasngerman{\sisetup{locale = DE}}
+\addto\extrasenglish{\sisetup{locale = US}}
 
 % ################################################
 % Document type-dependent configurations
