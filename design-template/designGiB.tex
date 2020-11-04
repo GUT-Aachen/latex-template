@@ -9,7 +9,9 @@
 								toc = listof,  % List of figures and tables to table of contents
 								toc = bibliography,
 								numbers = noendperiod,  % no dot at the end of chapter and section labels
-								ngerman  % set language to new german (will be send to all language dependend packages like babel)
+								% set language that will be send to all language dependend packages, e.g. babel
+								english  % set language to english
+								% ngerman  % set language to new german
 							]{scrbook}  % document class
 
 
@@ -148,8 +150,8 @@
 		\def\myBibCaption{Literaturverzeichnis}
 		\def\myAcronymListCaption{Abkürzungsverzeichnis}
 	}{
-		\def\myBibCaption{Reference List}
-		\def\myAcronymListCaption{Acronym List}
+		\def\myBibCaption{Bibliography}
+		\def\myAcronymListCaption{Acronyms}
 	}
 	
 	% set chapter title for list of acronyms
