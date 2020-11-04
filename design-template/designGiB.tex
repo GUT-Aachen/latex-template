@@ -69,7 +69,9 @@
 	\usepackage[style = rwth-gib,  % change style in toc to 'authoryear';change citation style to 	'authoryear-comp' (Fuentes 2018, 2019) instead of (Fuentes 2018, Fuentes 2019) without -comp
 							maxbibnames = 99, % arbitrary high value to ensure that all authors are listet in the bibliography
 							maxcitenames = 2, % truncate nameslist for citations
-							giveninits = true % abbrevation for first name
+							giveninits = true, % abbrevation for first name
+							date = year, % controls the basic format of printed date specifications
+							uniquelist = false % This feature allows ambiguous labelname list --> unique dateformat (e.g. 2020a, 2020b)
 							]{biblatex}  % use biblatex for bibliography
 
 	\usepackage{acro}  % handle acronyms
