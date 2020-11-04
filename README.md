@@ -198,31 +198,23 @@ Additional for bachelor/master thesis:
 
 ## Additional Hints
 ### Setup template to German language
-1. Modify and hardcode language in template `designGiB`.
+1. Modify language in template `designGiB`.
     Change `english` to `ngerman` as follows from
     ```tex
     \documentclass[	paper=a4,  % paper size set to DIN A4
-                    twoside = true,  % two side formatting
-                    fontsize = 12,  % font size for \normalsize set to 12
-                    parskip = half,  % paragraphs are separated by 0.5\baselineskip
-                    BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
-                    toc = listof,  % List of figures and tables to table of contents
-                    toc = bibliography, % List bibliography in table of contents
-                    numbers = noendperiod,  % no dot at the end of chapter and section labels
-                    english  % set language to new german (will be send to all language dependend packages like babel)
+                    [...]  % some options are left out here for a better overview!
+                    % set language that will be send to all language dependend packages, e.g. babel
+                    english  % set language to english
+                    % ngerman  % set language to new german
                   ]{scrbook}  % document class
     ```
     to
     ```tex
     \documentclass[	paper=a4,  % paper size set to DIN A4
-                    twoside = true,  % two side formatting
-                    fontsize = 12,  % font size for \normalsize set to 12
-                    parskip = half,  % paragraphs are separated by 0.5\baselineskip
-                    BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
-                    toc = listof,  % List of figures and tables to table of contents
-                    toc = bibliography, % List bibliography in table of contents
-                    numbers = noendperiod,  % no dot at the end of chapter and section labels
-                    ngerman  % set language to new german (will be send to all language dependend packages like babel)
+                    [...]  % some options are left out here for a better overview!
+                    % set language that will be send to all language dependend packages, e.g. babel
+                    % english  % set language to english
+                    ngerman  % set language to new german
                   ]{scrbook}  % document class
     ```
 
