@@ -82,11 +82,11 @@ This template is coded to be compiled with *PdfLaTeX*. Other compilers like *XeL
   
     4. Optional: Load additional packages
     
-    4. Optional: Include bibliography and acronym sources.
-       ```tex
-       \input{acronyms}  % acronyms.tex contains acronyms definitions
-       \addbibresource{bibliography.bib}  % bibliography.bib is a BibLaTeX file
-       ```
+4. Optional: Include bibliography and acronym sources in `main.tex` not in `user_config.tex`.
+   ```tex
+   \input{acronyms}  % acronyms.tex contains acronyms definitions
+   \addbibresource{bibliography.bib}  % bibliography.bib is a BibLaTeX file
+   ```
   
 5. Begin the document.
    ```tex
