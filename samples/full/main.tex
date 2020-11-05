@@ -1,9 +1,11 @@
 \input{../../design-template/designGiB}  % import GiB design for dissertation
-
 % ###################################################################################
 % A 'user_config.tex' file has to be created in the subfolder 'additionals'
 % All document type dependent (BA, MA, DISS) settings take place in this file, i.e. setting title, reviewer name or type of document. Additionally loaded packages or other user-dependent settings like adding a bibliography can also be defined there. 
 % ###################################################################################
+
+% The bibliography should be included in the main.tex document, so that TeXstudio (or similar) knows that there is a bibliography and executes the biblatex (biber) compiler accordingly when the bibliography is changed.
+\addbibresource{additionals/bibliography.bib}  % add bibliography
 
 \begin{document}
 
