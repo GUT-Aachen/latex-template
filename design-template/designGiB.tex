@@ -170,7 +170,8 @@
 	% Include users configuration file if it exists
 	\InputIfFileExists{additionals/user_config.tex}{}{
 		% If user_config.tex file not found the following defaults are set to prevent crashes
-		\def\myAuthor{Your Name}
+		\def\myAuthor{Your Name, if necessary Birth Name}
+		\def\myAuthorSex{}  % male/female
 		\def\myFirstReviewer{First Reviewer}
 		\def\mySecondReviewer{Second Reviewer}
 		\def\myExamDate{30.02.2021}
@@ -184,6 +185,7 @@
 		
 		\def\mySupervisor{Supervisors Name}
 		\def\myExamLocation{Location}
+
 	}
 	
 	% Create variable german study programm name in \myStudyProgramNameDe depending on thesis type (BA/MA)

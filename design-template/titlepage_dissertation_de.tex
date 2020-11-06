@@ -9,7 +9,13 @@
 	{\large \textbf{\mySubtitle}}
 	
 	\vspace*{3\baselineskip}
-	Von der Fakultät für Bauingenieurwesen\\ der Rheinisch-Westfälischen Technischen Hochschule Aachen\\ zur Erlangung des akademischen Grades eines Doktors\\ der Ingenieurwissenschaften genehmigte Dissertation.
+	\ifthenelse{
+		\equal{\myAuthorSex}{male}
+	}{
+		Von der Fakultät für Bauingenieurwesen\\ der Rheinisch-Westfälischen Technischen Hochschule Aachen\\ zur Erlangung des akademischen Grades eines Doktors\\ der Ingenieurwissenschaften genehmigte Dissertation
+	}{
+		Von der Fakultät für Bauingenieurwesen\\ der Rheinisch-Westfälischen Technischen Hochschule Aachen\\ zur Erlangung des akademischen Grades einer Doktorin\\ der Ingenieurwissenschaften genehmigte Dissertation
+	}
 
 	\vspace*{3\baselineskip}	
 	vorgelegt von \\
