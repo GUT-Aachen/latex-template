@@ -4,10 +4,11 @@
 \documentclass[	paper=a4,  % paper size set to DIN A4
 								twoside = true,  % two side formatting
 								fontsize = 12,  % font size for \normalsize set to 12
-								parskip = half,  % paragraphs are separated by 0.5\baselineskip
+								% parskip = half,  % paragraphs are separated by 0.5\baselineskip
 								BCOR = 0cm,  % sets bonding correction (Bindekorrektur) to 0 cm
 								toc = listof,  % List of figures and tables to table of contents
-								toc = bibliography,
+								toc = bibliography,  % add bibliography to table of contens
+								listof = entryprefix,  % add entry prefix to list of figures and tables
 								numbers = noendperiod,  % no dot at the end of chapter and section labels
 								% set language that will be send to all language dependend packages, e.g. babel
 								english  % set language to english
@@ -93,23 +94,28 @@
 	\setkomafont{chapter}{\Large\sffamily}
 	\setkomafont{section}{\large\sffamily}
 	\setkomafont{subsection}{\normalsize\sffamily}
+	\setkomafont{subsubsection}{\normalsize\sffamily}
 	\setkomafont{pageheadfoot}{\footnotesize}
 	\setkomafont{pagefoot}{\usekomafont{pageheadfoot}}
 	\setkomafont{pagenumber}{\usekomafont{pageheadfoot}}
 	\addtokomafont{disposition}{\rmfamily}
+	\setcounter{secnumdepth}{\subsubsectionnumdepth}  % activate numbering of subsubsection
 	
 	% Define header
 	\clearpairofpagestyles  % clear existing header and footer
 	% without *: only on regular pages
 	% with *: also on plain pages (like chapter beginning)
-	\ihead*[\leftmark]{\headmark}  % Inside show caption of chapter (left) / section (right); on plain pages allways chapter (leftmark)
-	\ohead*{\pagemark}  % Outside show page number
+	\ihead*[\sffamily\leftmark]{\sffamily\headmark}  % Inside show caption of chapter (left) / section (right); on plain pages allways chapter (leftmark)
+	\ohead*{\sffamily\pagemark}  % Outside show page number
 	
 	% Define footer	
-	\ofoot*{\myFootText}  % Show authors name
+	\ifoot*{\sffamily\myFootText}  % Show authors name
 	
 	% Set line spacing to 1.15
 	\setstretch{1.15}
+	
+	% Set parskip to 0.25 instead of half or full
+	\setparsizes{0em}{0.25\baselineskip plus .25\baselineskip}{1em plus 1fil}
 	
 	% Disable single lines at the start of a paragraph (orphans)
 	\clubpenalty = 10000
