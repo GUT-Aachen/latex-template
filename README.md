@@ -239,6 +239,9 @@ If you are running into errors while compiling your latex document, these hints 
 5. Running on Linux? Inlcude `inputenc` package and set option to *utf8*.
 
 
+### Bibliography
+Set up/declare the bibliography file `*.bib` in your main document and not in the `user_config.tex`. Due to the software you are using this can cause problems, because the software, e.g. TeXstudio, doesn't recognize the bibliography files, doesn't run biber and therefore the compiler tells you, that `main.bbl` is missing. Furthermore will the bibliography compiling not be done automatically, as changes of the bibliography file are not automatically recognized by your software.
+
 ### Document segmantation
 1. Use `\frontmatter` at the beginning and set the page numbering to *Roman*. The front matter includes all lists of something, e. g. figures, table of contents and titlepage.
    ```tex
