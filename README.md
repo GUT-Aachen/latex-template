@@ -253,7 +253,7 @@ Set up/declare the bibliography file `*.bib` in your main document and not in th
    ... (title page, list of...)
    ```
    
-2. Following use `\mainmatter` for the main part of the document, closing with the bibliography. In this and the upcomming parts page numbering is set so *arabic*
+2. Following use `\mainmatter` for the main part of the document, closing with the bibliography. In this and the upcomming parts page numbering is set so *arabic* automatically.
 
 3. Close the document with `\appendix`.
    ```tex
