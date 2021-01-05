@@ -294,12 +294,12 @@ instead of
 ```
 
 ### Create a list of symbols
-The easiest way to create a list of symbols is to create a table containing your symbols and the description. You should use a longtable in this case to be prepared for a table enlarging a single page.
+The easiest way to create a list of symbols is to create a table containing your symbols and the description. You should use a longtable in this case to be prepared for a table enlarging a single page. Each column has a fixed width to ensure linebreaks if a description is to long for a single line.
 
 ```tex
 \chapter{List of Symbols}
   \section*{Latin Letters}
-    \begin{longtable}[l]{p{1.5cm}p{1.5cm}l}
+    \begin{longtable}[l]{p{1.5cm}p{1.5cm}p{0.7\linewidth}}
       $A_0$ & $[m^2]$ & cross-sectional area at the beginning of the experiment \\
       $B$ & $[m]$ & Sample width\\
       ...
