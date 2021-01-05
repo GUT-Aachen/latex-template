@@ -152,6 +152,7 @@ All up-coming packages, with the exception of the packages recommended for Germa
 * `setspace` changes the linespacing in an easy way
 * `subcaption` includes subfigure environment
 * `textcomp` modifies symbols, i. e. § and €
+* `uarial` use an arial-cloned font as ssfamily font
 * `xcolor` makes latex more colorful and is needed to create title pages
 
 ### Recommended packages
