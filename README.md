@@ -244,14 +244,16 @@ If you are running into errors while compiling your latex document, these hints 
 Set up/declare the bibliography file `*.bib` in your main document and not in the `user_config.tex`. Due to the software you are using this can cause problems, because the software, e.g. TeXstudio, doesn't recognize the bibliography files, doesn't run biber and therefore the compiler tells you, that `main.bbl` is missing. Furthermore will the bibliography compiling not be done automatically, as changes of the bibliography file are not automatically recognized by your software.
 
 ### Document segmantation
-1. Use `\frontmatter` at the beginning and set the page numbering to *Roman*. The front matter includes all lists of something, e. g. figures, table of contents and titlepage.
+1. Insert the title page before the frontmatter starts to ensure the start of page numbering at the TOC.
+
+1. Use `\frontmatter` at the beginning and set the page numbering to *Roman*. The front matter includes all lists of something, e. g. figures and table of contents.
    ```tex
    \frontmatter
    \pagenumbering{Roman}
    ... (title page, list of...)
    ```
    
-2. Following use `\mainmatter` for the main part of the document, closing with the bibliography.
+2. Following use `\mainmatter` for the main part of the document, closing with the bibliography. In this and the upcomming parts page numbering is set so *arabic*
 
 3. Close the document with `\appendix`.
    ```tex
@@ -297,7 +299,7 @@ The easiest way to create a list of symbols is to create a table containing your
 ```tex
 \chapter{List of Symbols}
   \section*{Latin Letters}
-    \begin{longtable}[l]{p{1cm}p{1cm}l}
+    \begin{longtable}[l]{p{1.5cm}p{1.5cm}l}
       $A_0$ & $[m^2]$ & cross-sectional area at the beginning of the experiment \\
       $B$ & $[m]$ & Sample width\\
       ...
