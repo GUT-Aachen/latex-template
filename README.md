@@ -1,5 +1,5 @@
 # GiB Thesis LaTeX Template
->LaTeX template for theses (i. e. dissertation) at the Chair of Geotechnical Engeneering at RWTH Aachen.
+>LaTeX template for theses (i. e. dissertation) at the Chair of Geotechnical Engineering and Institute of Geomechanics and Underground Technology at RWTH Aachen.
 The template is based on the *scrbook-class* of the *KOMA-Script*. Some design modifications are made to match the design demands of the chair:
 * fontsize
 * margins
@@ -10,9 +10,9 @@ The template is based on the *scrbook-class* of the *KOMA-Script*. Some design m
 * captions (tables and figures)
 * title page
 
-[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)
-[![License: GNU](https://img.shields.io/github/release-date/froido/gib-latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
-[![License: GNU](https://img.shields.io/github/v/release/froido/gib-latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
+[![License: GNU](https://img.shields.io/github/license/GUT-Aachen/latex-template?style=flat-square)](LICENSE)
+[![License: GNU](https://img.shields.io/github/release-date/GUT-Aachen/latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
+[![License: GNU](https://img.shields.io/github/v/release/GUT-Aachen/latex-template?style=flat-square)](https://github.com/froido/gib-latex-template/releases)
 [![MiKTeX](https://img.shields.io/static/v1?label=MiKTeX&message=v20.7&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
 [![MiKTeX](https://img.shields.io/static/v1?label=MiKTeX&message=PdfLaTeX&color=5269A9&style=flat-square&logo=latex)](https://miktex.org/)
 [![KOMA-Script](https://img.shields.io/static/v1?label=KOMA-Script&message=v3.31&color=5269A9&style=flat-square&logo=latex)](https://komascript.de/)
@@ -335,7 +335,7 @@ To create a caption above a table, respecting design margings `\captionabove` mu
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://www.geotechnik.rwth-aachen.de/index.php?section=Biebricher_en" target="_blank">`www.geotechnik.rwth-aachen.de`</a>
+- Website at <a href="https://www.gut.rwth-aachen.de/cms/Geotechnik/Das-Institut/Team/~liwvr/Sven-Biebricher/?lidx=1" target="_blank">`www.gut.rwth-aachen.de`</a>
 - <a href="https://orcid.org/0000-0001-9018-3485" target="_blank">ORCID</a>
 - <a href="https://www.xing.com/profile/SvenF_Biebricher" target="_blank">XING</a>
 
@@ -343,7 +343,7 @@ Reach out to me at one of the following places!
 
 ## License
 
-[![License: GNU](https://img.shields.io/github/license/froido/gib-latex-template?style=flat-square)](LICENSE)  
+[![License: GNU](https://img.shields.io/github/license/GUT-Aachen/latex-template?style=flat-square)](LICENSE)  
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
 ---
