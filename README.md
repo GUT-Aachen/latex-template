@@ -1,7 +1,7 @@
 # GUT Thesis LaTeX Template
->LaTeX template for theses (i. e. dissertation) at the Chair of Geotechnical Engineering and Institute of Geomechanics and Underground Technology at RWTH Aachen.
+>LaTeX template for theses (i. e. dissertation) at the Institute of Geomechanics and Underground Technology at RWTH Aachen.
 The template is based on the *scrbook-class* of the *KOMA-Script*. Some design modifications are made to match the design demands of the chair:
-* fontsize
+* fonts and fontsize
 * margins
 * linespacing
 * header/footer
