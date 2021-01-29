@@ -29,7 +29,7 @@ This template is coded to be compiled with *PdfLaTeX*. Other compilers like *XeL
 * KOMA-Script v3.31
 * Babel v3.51
 
-*Other required packages are listed under the topic __Packages__.*
+*Other required packages are listed under the topic __[Packages](https://github.com/GUT-Aachen/latex-template#packages)__.*
 
 ---
 
